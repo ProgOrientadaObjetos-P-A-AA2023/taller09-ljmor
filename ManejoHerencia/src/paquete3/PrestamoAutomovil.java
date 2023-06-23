@@ -61,7 +61,8 @@ public class PrestamoAutomovil extends Prestamo{
 
     @Override
     public String toString() {
-        String m = String.format("%s-Prestamo Automovil\n"
+        String m = String.format("%s-Ciudad Prestamo: %s\n\n"
+                + "-Prestamo Automovil\n"
                 + "\tTipo de auto: %s\n"
                 + "\tMarca de auto: %S\n"
                 + "\tValor del auto: $%.2f\n"
@@ -70,6 +71,7 @@ public class PrestamoAutomovil extends Prestamo{
                 + "\tNombre: %s %s\n"
                 + "\tUsername: %s\n\n",
                 super.toString(),
+                ciudadPrestamo.toLowerCase(),
                 tipoAuto,
                 marcaAuto,
                 valorAuto,

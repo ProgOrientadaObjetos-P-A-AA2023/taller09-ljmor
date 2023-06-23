@@ -44,13 +44,11 @@ public class Prestamo {
                 + "-Beneficiario:\n"
                 + "\tNombre: %s %s\n"
                 + "\tUsername: %s\n\n"
-                + "-Tiempo Prestamo: %d meses.\n"
-                + "-Ciudad Prestamo: %s\n\n",
+                + "-Tiempo Prestamo: %d meses.\n",
                 beneficiario.getNombre(),
                 beneficiario.getApellido(),
                 beneficiario.getUsername(),
-                tiempoPrestamo,
-                ciudadPrestamo.toLowerCase());
+                tiempoPrestamo);
         return m;
     }
     
